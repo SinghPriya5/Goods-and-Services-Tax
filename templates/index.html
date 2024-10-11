@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Goods and Services Tax(GST) Prediction</h1>
+        <div class="form-container">
+            <form action="/predict" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Column0">Column0:</label>
+                        <input type="float" id="Column0" name="Column0" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column1">Column1:</label>
+                        <input type="number" id="Column1" name="Column1" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column2">Column2:</label>
+                        <input type="float" id="Column2" name="Column2" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column3">Column3:</label>
+                        <input type="float" id="Column3" name="Column3" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column4">Column4:</label>
+                        <input type="float" id="Column4" name="Column4" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column5">Column5:</label>
+                        <input type="float" id="Column5" name="Column5" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column6">Column6:</label>
+                        <input type="float" id="Column6" name="Column6" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column7">Column7:</label>
+                        <input type="float" id="Column7" name="Column7" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column8">Column8:</label>
+                        <input type="float" id="Column8" name="Column8" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column9">Column9:</label>
+                        <input type="float" id="Column9" name="Column9" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column10">Column10:</label>
+                        <input type="number" id="Column10" name="Column10" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column11">Column11:</label>
+                        <input type="number" id="Column11" name="Column11" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column12">Column12:</label>
+                        <input type="number" id="Column12" name="Column12" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column13">Column13:</label>
+                        <input type="number" id="Column13" name="Column13" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column14">Column14:</label>
+                        <input type="float" id="Column14" name="Column14" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column15">Column15:</label>
+                        <input type="float" id="Column15" name="Column15" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column16">Column16:</label>
+                        <input type="float" id="Column16" name="Column16" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column17">Column17:</label>
+                        <input type="number" id="Column17" name="Column17" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column18">Column18:</label>
+                        <input type="float" id="Column18" name="Column18" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column19">Column19:</label>
+                        <input type="number" id="Column19" name="Column19" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column20">Column20:</label>
+                        <input type="number" id="Column20" name="Column20" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Column21">Column21:</label>
+                        <input type="number" id="Column21" name="Column21" min="0" required>
+                    </div>
+                    <div class="form-group submit-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Prediction Result Display -->
+        {% if prediction %}
+        <div class="result">
+            <h2>Prediction:</h2>
+            <p>{{ prediction }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
