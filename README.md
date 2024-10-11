@@ -210,7 +210,7 @@ The model achieved an accuracy of 98%.
 <div style="font-family: 'Courier New', monospace; font-size: 1.1em;"> <ul> <li>Explore additional machine learning algorithms to improve prediction accuracy.</li> <li>Implement advanced feature engineering to capture more relevant data aspects.</li> <li>Optimize the Flask application for faster response times and better scalability.</li> <li>Integrate real-time data for dynamic analysis and predictions.</li> <li>Enhance the frontend user interface for a more intuitive experience.</li> </ul> </div>
 
 ## <h3>📜Deployed:</h3>
-Deployed on Render -- [Link](https://github.com/SinghPriya5/Goods-and-Services-Tax/issues)
+Deployed on Render -- [Link](https://render.com/)
 
 <br> The instructions are given on [Render Documentation](https://docs.render.com/deploy-flask) to deploy a web app.
 
