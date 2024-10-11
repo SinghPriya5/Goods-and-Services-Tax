@@ -25,6 +25,7 @@
 * [Web View](#Web-View)
 * [Bug or Feature Request](#Bug-or-Feature-Request)
 * [Future Scope](#Future-Scope)
+* [Project Overview](#Project-Overview)
 * [Conclusion](#Conclusion)
 
 ## <h3>📜Problem Statement:</h3>
@@ -91,8 +92,8 @@
 
 * **Handling Missing Values:** Missing values in specific columns were filled with the median of those columns. This method helps maintain the distribution of the data without introducing bias.
    ```python
-    for column in ['column1', 'column2']:
-         merged_df[column].fillna(merged_df[column].median(), inplace=True)
+    cols_to_fill = ['Column0', 'Column3', 'Column4', 'Column5', 'Column6', 'Column8', 'Column9', 'Column10', 'Column14', 'Column15']
+    merged_df[cols_to_fill] = df[cols_to_fill].fillna(df[cols_to_fill].median())
 * **Outlier Detection and Removal:**
 Z-Score Calculation: A z-score was calculated for a specified column (Column1) to identify outliers. The z-score indicates how many standard deviations a data point is from the mean.
   ```python
@@ -265,6 +266,10 @@ The project has potential for expansion in several areas:
 
 - **User Training:**
   - Provide training resources for users to better understand how to use the model effectively.
+  - 
+ ## <h3>📜Project Overview:</h3>
+ 
+  - **Project:** [Link](https://github.com/SinghPriya5/Goods-and-Services-Tax/blob/main/Notebook/GST_Model_Production.ipynb)
 
 ## <h3>📜Conclusion:</h3>
 <div style="font-family: 'Courier New', monospace; font-size: 1.1em;"> This project on GST classification utilizes machine learning to provide valuable insights into transaction classification. By analyzing the data thoroughly, developing and evaluating multiple models, we can improve prediction accuracy and enhance the decision-making process in GST classification. <br><br> The key methodology involved a systematic approach to data preparation, cleaning, and model training. By using multiple classification techniques and robust evaluation metrics, the model development process aimed to identify the most effective method for predicting the target variable, ensuring that the resulting model is both accurate and interpretable. Future steps could involve hyperparameter tuning for optimization and cross-validation to enhance model reliability. </div> 
